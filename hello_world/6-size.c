@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- * main -Entry point
+ * main - Entry point
  *
+ * Description: prints the size of various types on the computer
+ * 
  * Return always 0 (Succes)
- *
- */
+ * /
 int main(void)
 {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
