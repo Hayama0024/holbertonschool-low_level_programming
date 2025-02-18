@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n,last;
+	int n,n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
