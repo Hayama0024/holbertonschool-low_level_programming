@@ -2,7 +2,7 @@
 /**
  * print_sign  -  prints the sign of a number
  * @n: integer arg
- * return 1 if 0 < n,0 if n = 0,-1 if 0 > n
+ * Return + if 0 < n, 0 if n = 0, -1 if n < 0
  */
 int print_sign(int n)
 {
