@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * int_isalpha(int c) - checks for alphabetic character
- * @c is an int type member
- * return 1 if ture, 0 if false
+ * _isalpha - checks for alphabetic character
+ * @c: is an int type member
+ * Return: 1 if ture, 0 if false
  */
 int _isalpha(int c)
 {
