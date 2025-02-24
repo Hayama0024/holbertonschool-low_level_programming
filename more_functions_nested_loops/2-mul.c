@@ -4,7 +4,7 @@
  * mul - miltiplies the integers
  * @a: integer
  * @b: integer
- * retun: (a * b)
+ * Retun: (a * b)
  */
 int mul(int a, int b)
 {
