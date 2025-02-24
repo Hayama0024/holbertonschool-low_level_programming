@@ -2,8 +2,9 @@
 #include <stdio.h>
 /**
  * mul - miltiplies the integers
- * @:a integer
- * @:b integer
+ * @a: integer
+ * @b: integer
+ * retun (a * b)
  */
 int mul(int a, int b)
 {
