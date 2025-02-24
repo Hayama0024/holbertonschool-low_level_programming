@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _putchar - prints number 0 to 9
+ * print_most_numbers - prints number 0 to 9
  * exept 2 and 4
  *
  * Return: Always 0(Success)
