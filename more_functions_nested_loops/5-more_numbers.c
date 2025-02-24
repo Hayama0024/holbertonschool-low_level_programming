@@ -4,12 +4,12 @@
  */
 void more_numbers(void)
 {
-	int i, num;
+	int i, j;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (num = 0; num < 14; num++)
-		_putchar("%d", num);
+		for (j = 0; j < 14; j++)
+		_putchar(j);
 	}
 	_putchar('\n');
 }
