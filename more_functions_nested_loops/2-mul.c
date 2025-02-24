@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * mul - miltiplies the integers
- * @:a, b are two integers
+ * @:a integer
+ * @:b integer
  */
 int mul(int a, int b)
 {
