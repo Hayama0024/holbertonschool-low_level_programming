@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - prints diagonal
- * @i: num of times
+ * @n: num of times
  */
 void print_diagonal(int n)
 {
