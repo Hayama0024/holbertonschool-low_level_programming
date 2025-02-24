@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void print_diagonal - prints diagonal
+ * print_diagonal - prints diagonal
  * @i: num of times
  */
 void print_diagonal(int n)
