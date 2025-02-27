@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print - prints letters
- * @*s: array of char
+ * @s: array of char
  */
 void print_rev(char *s)
 {
