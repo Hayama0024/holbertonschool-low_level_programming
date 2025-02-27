@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts - prints a char
+ * _puts - prints a char
  * @str: array of char
  */
 void _puts(char *str)
