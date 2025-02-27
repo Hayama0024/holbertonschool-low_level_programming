@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print - prints letters
+ * print_rev - prints letters
  * @s: array of char
  */
 void print_rev(char *s)
