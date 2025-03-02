@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - appends string to other string
+ * _strncat - appends string to other string
  * @dest: array of string
  * @src: array of string
  * @n: integer
