@@ -23,8 +23,11 @@ char *cap_string(char *str)
 
 		for (j = 0; sep[j] != '\0'; j++)
 		{
-			cap = 1;
-			break;
+			if (str[i] == sep[j])
+			{
+				cap = 1;
+				break;
+			}
 		}
 	i++;
 	}
