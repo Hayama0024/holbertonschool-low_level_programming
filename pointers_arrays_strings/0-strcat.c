@@ -3,6 +3,7 @@
  * _strcat - appends string to other string
  * @dest: array of string
  * @src: array of string
+ * Return: return dest
  */
 char *_strcat(char *dest, char *src)
 {
