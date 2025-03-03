@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _memcopy - copies memory area
+ * _memcpy - copies memory area
  * @dest: string
  * @src: string copies into dest
  * @n: number of byte
