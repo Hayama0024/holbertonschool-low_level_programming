@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	for (i = 0; i < size; i++)
 	{
 		main_diag += a[i * size + i];
-		sec_diag += a[i * (size - 1 - i)];
+		sec_diag += a[i * size + (size - 1 - i)];
 	}
 
 	printf("%d, %d\n", main_diag, sec_diag);
