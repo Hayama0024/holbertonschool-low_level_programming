@@ -2,8 +2,6 @@
 /**
  * _chessboard - prints chessboard
  * @a: double string
- * @i: array of string
- * @j: array of string
  */
 void print_chessboard(char (*a)[8])
 {
