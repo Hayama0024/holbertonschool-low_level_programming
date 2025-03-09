@@ -18,7 +18,7 @@ int is_number(char *str)
 	while (str[i])
 	{
 		if (!isdigit(str[i]))
-			return(0);
+			returnu (0);
 		i++;
 	}
 	return (1);
@@ -30,7 +30,7 @@ int is_number(char *str)
  *
  * Return: 0 if successful, 1 if an error occurs
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
