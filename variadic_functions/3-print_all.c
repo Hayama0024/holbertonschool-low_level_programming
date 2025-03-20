@@ -2,9 +2,13 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_all - prints anything based on the given format
- * @format: string that contains format specifiers
- */
+* print_all - prints anything based on the given format
+* @format: a string that contains format specifiers
+*
+* Description: This function prints `char`, `int`, `float`, and `string`
+* arguments separated by `", "`, and ignores invalid specifiers.
+* If a string argument is NULL, it prints `(nil)`.
+*/
 void print_all(const char * const format, ...)
 {
 	va_list args;
@@ -13,35 +17,36 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format && format[i] != '\0')
+	if (format)
 	{
-		if (format[i] == 'c' || format[i] == 'i' ||
-			format[i] == 'f' || format[i] == 's')
+		while (format[i] != '\0')
 		{
-			printf("%s", separator);
-			separator = ", ";
-
-			while (1)
+			if (format[i] == 'c' || format[i] == 'i' ||
+				format[i] == 'f' || format[i] == 's')
 			{
-				if (format[i] == 'c')
-					printf("%c", va_arg(args, int));
-				else if (format[i] == 'i')
-					printf("%d", va_arg(args, int));
-				else if (format[i] == 'f')
-					printf("%f", va_arg(args, double));
-				else
+				printf(" %s ", separator);
+				separator = ", ";
+
+				switch (format[i])
 				{
-					str = va_arg(args, char *);
-					if (str == NULL)
-						str = "(nil)";
-					printf("%s", str);
+					case 'c';
+						printf(" %c ", va_arg(args, int));
+						break;
+					case 'i':
+						printf(" %d ", va_arg(args, int));
+						break;
+					case 'f':
+						printf(" %f ", va_arg(args, double));
+						break;
+					case 's':
+						str = va_arg(args, char *);
+						printf(" %s ", (str ? str : "(nil)"));
+						break;
 				}
-				break;
 			}
+			i++;
 		}
-		i++;
 	}
 	va_end(args);
 	printf("\n");
 }
-
